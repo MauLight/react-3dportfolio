@@ -17,8 +17,8 @@ const Hero = () => {
             I'm a Software Engineer who designs <br className="sm:block hidden" /> functional and beautiful Apps.
           </p>
         </div>
-        <ComputersCanvas />
       </div>
+      <ComputersCanvas />
     </section>
   )
 }
