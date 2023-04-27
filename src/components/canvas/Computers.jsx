@@ -32,8 +32,8 @@ const Computers = ({ isMobile }) => {
       />
       <primitive
         object={walkman.scene}
-        scale={isMobile ? 0.65 : 0.85}
-        position={isMobile ? [-13, -5.25, -5] : [-5, -5.25, -5]}
+        scale={isMobile ? 0.45 : 0.65}
+        position={isMobile ? [-13, -5.25, -5] : [-6, -4.25, -5]}
         rotation={[0, -5.5, 0]}
       />
     </mesh>
@@ -69,7 +69,8 @@ const ComputerCanvas = () => {
     <Canvas
       frameloop='demand'
       shadows
-      camera={{ position: [30, 10, 15], fov: 25 }}
+      dpr={[1, 2]}
+      camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -80,10 +81,11 @@ const ComputerCanvas = () => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
+
       <Preload all />
     </Canvas>
-  )
-}
+  );
+};
 
 
 export default ComputerCanvas
