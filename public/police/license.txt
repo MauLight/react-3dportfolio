@@ -1,0 +1,11 @@
+Model Information:
+* title:	Police Chase
+* source:	https://sketchfab.com/3d-models/police-chase-8b0f8cc5b4e7416789de968094a56b2e
+* author:	PaulsRage (https://sketchfab.com/paulsrage)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Police Chase" (https://sketchfab.com/3d-models/police-chase-8b0f8cc5b4e7416789de968094a56b2e) by PaulsRage (https://sketchfab.com/paulsrage) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
