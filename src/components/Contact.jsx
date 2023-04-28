@@ -7,7 +7,9 @@ import { EarthCanvas } from './canvas'
 import SectionWrapper from '../hoc/SectionWrapper'
 import { slideIn } from '../utils/motion'
 
-
+// template_tdoyjwl
+// service_zygjd9q
+// 26wtu6tzFp1KI5m-J
 
 const Contact = () => {
 
@@ -22,10 +24,38 @@ const Contact = () => {
 
   const handleChange = (e) => {
 
+    const { name, value } = e.target
+    setForm({ ...form, [name]: value })
+
   }
 
   const handleSubmit = (e) => {
-
+    e.preventDefault()
+    setLoading(true)
+    emailjs.send(
+      'service_zygjd9q', 'template_tdoyjwl',
+      {
+        from_name: form.name,
+        to_name: "M.Light",
+        from_email: form.email,
+        to_email: 'maulisseluz@gmail.com',
+        message: form.message
+      },
+      '26wtu6tzFp1KI5m-J'
+    )
+      .then(() => {
+        setLoading(false)
+        alert("Thank you! We'll get back to you as soon as possible!")
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+        })
+      }, (error) => {
+        setLoading(false)
+        console.log(error)
+        alert('Something went wrong, please try again.')
+      })
   }
 
   return (
